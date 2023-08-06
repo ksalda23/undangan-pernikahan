@@ -1,0 +1,92 @@
+:root {
+  --pink: #ff1493;
+  --bg: #000000;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg-prewed.jpg);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  margin-top: -0.5rem;
+}
+
+.hero h4 {
+  font-size: 1.5rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.hero h1 .hero h4 .hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+/* Media Query */
+
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 7px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 30px;
+    margin: 5px;
+  }
+}
+/* Handphone */
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 20px;
+    margin: 3px;
+  }
+}
