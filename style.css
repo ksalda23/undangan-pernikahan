@@ -9,6 +9,7 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+/* Hero Start */
 .hero {
   min-height: 100vh;
   position: relative;
@@ -58,6 +59,20 @@ body {
   background-color: var(--pink);
   color: white;
 }
+/* Hero End */
+
+/* Navigasi Start */
+
+.navigasi {
+}
+
+.navigasi .navbar-brand,
+.navigasi .offcanvas-title {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+}
+
+/* Navigasi End */
 
 /* Media Query */
 
