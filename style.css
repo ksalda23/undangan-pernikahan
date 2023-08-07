@@ -64,6 +64,12 @@ body {
 /* Navigasi Start */
 
 .navigasi {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+
+.navigasi .offcanvas {
+  height: 100vh;
 }
 
 .navigasi .navbar-brand,
@@ -79,9 +85,82 @@ body {
 
 /* Navigasi End */
 
+/* Home Section Start */
+
+.home {
+  background-image: url(img/bg-home.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -5.4rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.home h2 {
+  font-family: "Pacifico", cursive;
+  color: var(--pink);
+  font-size: 4rem;
+}
+
+.home h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1rem;
+}
+
+/* Couple Start */
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: "Pacifico";
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .love {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .love i {
+  margin: auto;
+  color: var(--pink);
+}
+
+/* Couple End */
+
+/* Home Section End */
+
 /* Media Query */
 
+/* XL */
+
+@media (max-width: 1200px) {
+  .home .love {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
 /* Laptop */
+
 @media (max-width: 992px) {
   html {
     font-size: 75%;
@@ -89,6 +168,10 @@ body {
   .simply-countdown > .simply-section {
     padding: 40px;
     margin: 7px;
+  }
+
+  .home .love {
+    display: none;
   }
 }
 
