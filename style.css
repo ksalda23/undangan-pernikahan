@@ -242,6 +242,9 @@ body {
     font-size: 2rem;
     text-align: center;
   }
+  .info .card-body {
+    font-size: 1.2rem;
+  }
 }
 /* Handphone */
 @media (max-width: 576px) {
@@ -251,5 +254,8 @@ body {
   .simply-countdown > .simply-section {
     padding: 20px;
     margin: 3px;
+  }
+  .info .card-footer {
+    font-size: 1rem;
   }
 }
