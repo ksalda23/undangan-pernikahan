@@ -242,6 +242,9 @@ body {
     font-size: 2rem;
     text-align: center;
   }
+  .sticky-top {
+    overflow: hidden;
+  }
   .info .card-body {
     font-size: 1.2rem;
   }

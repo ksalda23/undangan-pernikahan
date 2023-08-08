@@ -273,5 +273,20 @@
         },
       });
     </script>
+
+    <!-- Memperbaiki Overflow Tampilan Tablet - -->
+    <script>
+      const stickytop =document.querySelector('.sticky-top');
+      const menu = document.querySelector('.offcanvas');
+      // Menampilkan Navbar 
+      menu.addEventListener('show.bs.offcanvas', function() {
+        stickytop.style.overflow = 'visible';
+      }) 
+      // Menutup Navbar
+      menu.addEventListener('hidden.bs.offcanvas', function() {
+        stickytop.style.overflow = 'hidden';
+      })
+    </script>
+
   </body>
 </html>
